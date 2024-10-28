@@ -1,0 +1,1105 @@
+<!-- PRODUCTS PAGE FOR CAKES BY ESTELA -->
+<!-- PRODUCTS PAGE FOR CAKES BY ESTELA -->
+<!-- PRODUCTS PAGE FOR CAKES BY ESTELA -->
+<!-- PRODUCTS PAGE FOR CAKES BY ESTELA -->
+<!-- PRODUCTS PAGE FOR CAKES BY ESTELA -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="Marcel Angelo Navarro" />
+    <title>Cakes By Estela: Products</title>
+    <!-- FAVICON-->
+    <link rel="icon" type="image/x-icon" href="assets/cake-fav.svg" />
+    <!-- FONT AWESOME -->
+    <script
+      src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- GOOGLE FONTS-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luxurious+Script&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/productstyles.css" rel="stylesheet" />
+  </head>
+  <body id="page-top">
+    <!-- NAVIGATION-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="#page-top"
+          ><img src="assets/cbe-logo.png" alt="..."
+        /></a>
+
+        <!-- SEARCH BAR -->
+        <form class="d-flex">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+        </form>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          Menu
+          <i class="fas fa-bars ms-1"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home/Featured</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- MASTHEAD-->
+    <header class="masthead">
+      <div class="container">
+        <div class="masthead-subheading"></div>
+        <div class="masthead-heading" id="cbe-title">Our Cake Selection</div>
+        <!-- LOGO -->
+        <img id="logo" src="/assets/cbe-logo.png" alt="" /> <br />
+        <a class="btn btn-primary btn-xl text-uppercase" href="#portfolio"
+          >START ORDER</a
+        >
+      </div>
+    </header>
+    <div id="mainContent">
+      <!-- PRODUCTS GRID-->
+      <section class="page-section bg-light" id="portfolio">
+        <div class="container">
+          <div class="text-center">
+            <h2 class="section-heading text-uppercase" id="mainTitle">
+              OUR DECADENT CAKES
+            </h2>
+            <h3 class="section-subheading text-muted">
+              Sweet Creations for Every Moment
+            </h3>
+          </div>
+
+          <select class="form-select" id="sortSelect">
+            <option value="default">Sort By</option>
+            <option value="name">Sort A-Z</option>
+            <option value="price">Sort by Price</option>
+          </select>
+
+          <!-- CAKES GRID -->
+          <div class="row" id="productList"></div>
+        </div>
+      </section>
+
+      <!-- AFTER ADDING TO CART, RESULTS OF ADDED TO CART WILL BE DISPLAYED IN A TABLE -->
+      <table class="table" id="cbeCart">
+        <thead>
+          <tr>
+            <th>PRODUCT</th>
+            <th>QTY</th>
+            <th>PRICE</th>
+            <th>TOTAL</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+        <!-- TOTAL -->
+        <tfoot>
+          <tr>
+            <td id="total">TOTAL: P0.00</td>
+            <td colspan="3" id="checkoutBtn">
+              <button class="btn btn-primary" id="checkout">CHECKOUT</button>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+
+    <!-- FORM AT FOOTER-->
+    <section class="page-section" id="contact">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">Contact Us</h2>
+          <h3 class="section-subheading text-muted">
+            Let's Have a Sweet Talk.
+          </h3>
+        </div>
+        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+          <div class="row align-items-stretch mb-5">
+            <div class="col-md-6">
+              <div class="form-group">
+                <!-- NAME -->
+                <input
+                  class="form-control"
+                  id="name"
+                  type="text"
+                  placeholder="Your Name"
+                  data-sb-validations="required"
+                />
+                <div class="invalid-feedback" data-sb-feedback="name:required">
+                  A name is required.
+                </div>
+              </div>
+              <div class="form-group">
+                <!-- EMAIL -->
+                <input
+                  class="form-control"
+                  id="email"
+                  type="email"
+                  placeholder="Your Email"
+                  data-sb-validations="required,email"
+                />
+                <div class="invalid-feedback" data-sb-feedback="email:required">
+                  An email is required.
+                </div>
+                <div class="invalid-feedback" data-sb-feedback="email:email">
+                  Email is not valid.
+                </div>
+              </div>
+              <div class="form-group mb-md-0">
+                <!-- PHONE-->
+                <input
+                  class="form-control"
+                  id="phone"
+                  type="tel"
+                  placeholder="Your Phone"
+                  data-sb-validations="required"
+                />
+                <div class="invalid-feedback" data-sb-feedback="phone:required">
+                  A phone number is required.
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group form-group-textarea mb-md-0">
+                <!-- MESSAGE -->
+                <textarea
+                  class="form-control"
+                  id="message"
+                  placeholder="Your Message"
+                  data-sb-validations="required"
+                ></textarea>
+                <div
+                  class="invalid-feedback"
+                  data-sb-feedback="message:required"
+                >
+                  A message is required.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-none" id="submitSuccessMessage">
+            <div class="text-center text-white mb-3">
+              <div class="fw-bolder">Form Submission Successful!</div>
+              <br />
+            </div>
+          </div>
+          <div class="d-none" id="submitErrorMessage">
+            <div class="text-center text-danger mb-3">
+              Error Sending Message!
+            </div>
+          </div>
+          <!-- SUBMIT-->
+          <div class="text-center">
+            <button
+              class="btn btn-primary btn-xl text-uppercase disabled"
+              id="submitButton"
+              type="submit"
+            >
+              SUBMIT
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- FOOTER-->
+    <footer class="footer py-4">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-4 text-lg-start">
+            Copyright &copy; Cakes By Estela 2024
+          </div>
+          <div class="col-lg-4 my-3 my-lg-0">
+            <a
+              class="btn btn-dark btn-social mx-2"
+              href="https://www.facebook.com/profile.php?id=100077588319911"
+              target="_blank"
+              aria-label="Facebook"
+              ><i class="fab fa-facebook-f"></i></a
+            ><a
+              class="btn btn-dark btn-social mx-2"
+              href="https://www.instagram.com/cakesbyestela/"
+              target="_blank"
+              aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <a class="link-dark text-decoration-none me-3" href="#!"
+              >Privacy Policy</a
+            >
+            <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- RATINGS MODALS-->
+    <!-- CAKE MODAL 1 -->
+    <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal1"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-bs-dismiss="modal">
+            <img src="assets/img/close-icon.svg" alt="Close modal" />
+          </div>
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="modal-body">
+                  <!-- CAKE DETAILS -->
+                  <h2 class="text-uppercase">LEMON CAKE</h2>
+                  <!-- SUBTITLE -->
+                  <p class="item-intro text-muted">
+                    Cakes By Estela's Signature
+                  </p>
+                  <!-- RATING PAGE FOR THE CAKE -->
+                  <div class="rating-container">
+                    <div class="cake-slices">
+                      <span class="slice" data-rating="1"
+                        ><img
+                          src="/cakesbyestela/assets/img/ratecake.png"
+                          alt="Cake 1"
+                      /></span>
+                      <span class="slice" data-rating="2"
+                        ><img
+                          src="/cakesbyestela/assets/img/ratecake.png"
+                          alt="Cake 1"
+                      /></span>
+                      <span class="slice" data-rating="3"
+                        ><img
+                          src="/cakesbyestela/assets/img/ratecake.png"
+                          alt="Cake 1"
+                      /></span>
+                      <span class="slice" data-rating="4"
+                        ><img
+                          src="/cakesbyestela/assets/img/ratecake.png"
+                          alt="Cake 1"
+                      /></span>
+                      <span class="slice" data-rating="5"
+                        ><img
+                          src="/cakesbyestela/assets/img/ratecake.png"
+                          alt="Cake 1"
+                      /></span>
+                    </div>
+                    <p>
+                      Your Rating (Number of Cake Slices):
+                      <span class="rating-value">0</span>/5
+                    </p>
+
+                    <div class="review-section">
+                      <h3>Leave A Review</h3>
+                      <textarea
+                        class="review-text"
+                        rows="4"
+                        placeholder="Describe Your Experience..."
+                      ></textarea>
+                      <button class="submit-review">SUBMIT REVIEW</button>
+                    </div>
+
+                    <div class="review-output">
+                      <h4>SUBMITTED:</h4>
+                      <p class="submitted-rating">
+                        <strong>Rating:</strong> <span>0</span>/5
+                      </p>
+                      <p class="submitted-review">
+                        <strong>Review:</strong>
+                        <span>No Review Submitted Yet</span>
+                      </p>
+                    </div>
+                  </div>
+                  <a
+                    class="btn btn-primary btn-xl text-uppercase"
+                    id="closeModal"
+                    >CLOSE RATING</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CAKE MODAL 2 -->
+    <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal2"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-bs-dismiss="modal">
+            <img src="assets/img/close-icon.svg" alt="Close modal" />
+          </div>
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="modal-body">
+                  <!-- CAKE DETAILS -->
+                  <h2 class="text-uppercase">Mango Praline Cake</h2>
+                  <!-- SUBTITLE -->
+                  <p class="item-intro text-muted">
+                    A fresh, fruity, and delightful treat for hot summer days.
+                  </p>
+                  <!-- RATING PAGE FOR THE CAKE -->
+                  <div class="rating-container">
+                    <div class="cake-slices">
+                      <span class="slice" data-rating="1"
+                        ><img
+                          src="/cakesbyestela/assets/img/ratecake.png"
+                          alt="Cake 1"
+                      /></span>
+                      <span class="slice" data-rating="2"
+                        ><img
+                          src="/cakesbyestela/assets/img/ratecake.png"
+                          alt="Cake 1"
+                      /></span>
+                      <span class="slice" data-rating="3"
+                        ><img
+                          src="/cakesbyestela/assets/img/ratecake.png"
+                          alt="Cake 1"
+                      /></span>
+                      <span class="slice" data-rating="4"
+                        ><img
+                          src="/cakesbyestela/assets/img/ratecake.png"
+                          alt="Cake 1"
+                      /></span>
+                      <span class="slice" data-rating="5"
+                        ><img
+                          src="/cakesbyestela/assets/img/ratecake.png"
+                          alt="Cake 1"
+                      /></span>
+                    </div>
+                    <p>
+                      Your Rating (Number of Cake Slices):
+                      <span class="rating-value">0</span>/5
+                    </p>
+
+                    <div class="review-section">
+                      <h3>Leave A Review</h3>
+                      <textarea
+                        class="review-text"
+                        rows="4"
+                        placeholder="Describe Your Experience..."
+                      ></textarea>
+                      <button class="submit-review">SUBMIT REVIEW</button>
+                    </div>
+
+                    <div class="review-output">
+                      <h4>SUBMITTED:</h4>
+                      <p class="submitted-rating">
+                        <strong>Rating:</strong> <span>0</span>/5
+                      </p>
+                      <p class="submitted-review">
+                        <strong>Review:</strong>
+                        <span>No Review Submitted Yet</span>
+                      </p>
+                    </div>
+                  </div>
+                  <a
+                    class="btn btn-primary btn-xl text-uppercase"
+                    id="closeModal"
+                    >CLOSE RATING</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CAKE MODAL 3 -->
+    <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal3"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-bs-dismiss="modal">
+            <img src="assets/img/close-icon.svg" alt="Close modal" />
+          </div>
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="modal-body">
+                  <!-- CAKE DETAILS -->
+                  <h2 class="text-uppercase">Strawberry Shortcake</h2>
+                  <!-- SUBTITLE -->
+                  <p class="item-intro text-muted">
+                    Fresh strawberries and light whipped cream make this cake an
+                    irresistible treat.
+                  </p>
+                  <!-- RATING PAGE FOR THE CAKE -->
+                  <div class="rating-container">
+                    <div class="cake-slices">
+                      <span class="slice" data-rating="1"
+                        ><img
+                          src="/cakesbyestela/assets/img/ratecake.png"
+                          alt="Cake 1"
+                      /></span>
+                      <span class="slice" data-rating="2"
+                        ><img
+                          src="/cakesbyestela/assets/img/ratecake.png"
+                          alt="Cake 1"
+                      /></span>
+                      <span class="slice" data-rating="3"
+                        ><img
+                          src="/cakesbyestela/assets/img/ratecake.png"
+                          alt="Cake 1"
+                      /></span>
+                      <span class="slice" data-rating="4"
+                        ><img
+                          src="/cakesbyestela/assets/img/ratecake.png"
+                          alt="Cake 1"
+                      /></span>
+                      <span class="slice" data-rating="5"
+                        ><img
+                          src="/cakesbyestela/assets/img/ratecake.png"
+                          alt="Cake 1"
+                      /></span>
+                    </div>
+                    <p>
+                      Your Rating (Number of Cake Slices):
+                      <span class="rating-value">0</span>/5
+                    </p>
+
+                    <div class="review-section">
+                      <h3>Leave A Review</h3>
+                      <textarea
+                        class="review-text"
+                        rows="4"
+                        placeholder="Describe Your Experience..."
+                      ></textarea>
+                      <button class="submit-review">SUBMIT REVIEW</button>
+                    </div>
+
+                    <div class="review-output">
+                      <h4>SUBMITTED:</h4>
+                      <p class="submitted-rating">
+                        <strong>Rating:</strong> <span>0</span>/5
+                      </p>
+                      <p class="submitted-review">
+                        <strong>Review:</strong>
+                        <span>No Review Submitted Yet</span>
+                      </p>
+                    </div>
+                  </div>
+                  <a
+                    class="btn btn-primary btn-xl text-uppercase"
+                    id="closeModal"
+                    >CLOSE RATING</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CAKE MODAL 4 -->
+    <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal4"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-bs-dismiss="modal">
+            <img src="assets/img/close-icon.svg" alt="Close modal" />
+          </div>
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="modal-body">
+                  <!-- CAKE DETAILS -->
+                  <h2 class="text-uppercase">A's Chocolate Cake</h2>
+                  <!-- SUBTITLE -->
+                  <p class="item-intro text-muted">
+                    Rich chocolate delight that will satisfy your sweet tooth.
+                  </p>
+                  <!-- RATING PAGE FOR THE CAKE -->
+                  <div class="rating-container">
+                    <div class="cake-slices">
+                      <span class="slice" data-rating="1"
+                        ><img
+                          src="/cakesbyestela/assets/img/ratecake.png"
+                          alt="Cake 1"
+                      /></span>
+                      <span class="slice" data-rating="2"
+                        ><img
+                          src="/cakesbyestela/assets/img/ratecake.png"
+                          alt="Cake 1"
+                      /></span>
+                      <span class="slice" data-rating="3"
+                        ><img
+                          src="/cakesbyestela/assets/img/ratecake.png"
+                          alt="Cake 1"
+                      /></span>
+                      <span class="slice" data-rating="4"
+                        ><img
+                          src="/cakesbyestela/assets/img/ratecake.png"
+                          alt="Cake 1"
+                      /></span>
+                      <span class="slice" data-rating="5"
+                        ><img
+                          src="/cakesbyestela/assets/img/ratecake.png"
+                          alt="Cake 1"
+                      /></span>
+                    </div>
+                    <p>
+                      Your Rating (Number of Cake Slices):
+                      <span class="rating-value">0</span>/5
+                    </p>
+
+                    <div class="review-section">
+                      <h3>Leave A Review</h3>
+                      <textarea
+                        class="review-text"
+                        rows="4"
+                        placeholder="Describe Your Experience..."
+                      ></textarea>
+                      <button class="submit-review">SUBMIT REVIEW</button>
+                    </div>
+
+                    <div class="review-output">
+                      <h4>SUBMITTED:</h4>
+                      <p class="submitted-rating">
+                        <strong>Rating:</strong> <span>0</span>/5
+                      </p>
+                      <p class="submitted-review">
+                        <strong>Review:</strong>
+                        <span>No Review Submitted Yet</span>
+                      </p>
+                    </div>
+                  </div>
+                  <a
+                    class="btn btn-primary btn-xl text-uppercase"
+                    id="closeModal"
+                    >CLOSE RATING</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CAKE MODAL 5 -->
+    <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal5"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-bs-dismiss="modal">
+            <img src="assets/img/close-icon.svg" alt="Close modal" />
+          </div>
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="modal-body">
+                  <!-- CAKE DETAILS -->
+                  <h2 class="text-uppercase">Caramel Cheesecake</h2>
+                  <!-- SUBTITLE -->
+                  <p class="item-intro text-muted">
+                    A decadent cheesecake with a luscious caramel swirl.
+                  </p>
+                  <!-- RATING PAGE FOR THE CAKE -->
+                  <div class="rating-container">
+                    <div class="cake-slices">
+                      <span class="slice" data-rating="1"
+                        ><img
+                          src="/cakesbyestela/assets/img/ratecake.png"
+                          alt="Cake 1"
+                      /></span>
+                      <span class="slice" data-rating="2"
+                        ><img
+                          src="/cakesbyestela/assets/img/ratecake.png"
+                          alt="Cake 1"
+                      /></span>
+                      <span class="slice" data-rating="3"
+                        ><img
+                          src="/cakesbyestela/assets/img/ratecake.png"
+                          alt="Cake 1"
+                      /></span>
+                      <span class="slice" data-rating="4"
+                        ><img
+                          src="/cakesbyestela/assets/img/ratecake.png"
+                          alt="Cake 1"
+                      /></span>
+                      <span class="slice" data-rating="5"
+                        ><img
+                          src="/cakesbyestela/assets/img/ratecake.png"
+                          alt="Cake 1"
+                      /></span>
+                    </div>
+                    <p>
+                      Your Rating (Number of Cake Slices):
+                      <span class="rating-value">0</span>/5
+                    </p>
+
+                    <div class="review-section">
+                      <h3>Leave A Review</h3>
+                      <textarea
+                        class="review-text"
+                        rows="4"
+                        placeholder="Describe Your Experience..."
+                      ></textarea>
+                      <button class="submit-review">SUBMIT REVIEW</button>
+                    </div>
+
+                    <div class="review-output">
+                      <h4>SUBMITTED:</h4>
+                      <p class="submitted-rating">
+                        <strong>Rating:</strong> <span>0</span>/5
+                      </p>
+                      <p class="submitted-review">
+                        <strong>Review:</strong>
+                        <span>No Review Submitted Yet</span>
+                      </p>
+                    </div>
+                  </div>
+                  <a
+                    class="btn btn-primary btn-xl text-uppercase"
+                    id="closeModal"
+                    >CLOSE RATING</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CAKE MODAL 6 -->
+    <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal6"
+      tabindex="-1"
+      aria-labelledby="portfolioModal6"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="close-modal" data-bs-dismiss="modal">
+            <img src="assets/img/close-icon.svg" alt="Close modal" />
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <!-- CAKE DETAILS -->
+                  <h2 class="text-uppercase">Mango Graham Cake</h2>
+                  <!-- SUBTITLE -->
+                  <p class="item-intro text-muted">
+                    Tropical mango with a delicious graham crust, perfect for a
+                    taste of paradise.
+                  </p>
+                  <!-- RATING PAGE FOR THE CAKE -->
+                  <div class="rating-container">
+                    <div class="cake-slices">
+                      <span class="slice" data-rating="1"
+                        ><img
+                          src="/cakesbyestela/assets/img/ratecake.png"
+                          alt="Cake 1"
+                      /></span>
+                      <span class="slice" data-rating="2"
+                        ><img
+                          src="/cakesbyestela/assets/img/ratecake.png"
+                          alt="Cake 1"
+                      /></span>
+                      <span class="slice" data-rating="3"
+                        ><img
+                          src="/cakesbyestela/assets/img/ratecake.png"
+                          alt="Cake 1"
+                      /></span>
+                      <span class="slice" data-rating="4"
+                        ><img
+                          src="/cakesbyestela/assets/img/ratecake.png"
+                          alt="Cake 1"
+                      /></span>
+                      <span class="slice" data-rating="5"
+                        ><img
+                          src="/cakesbyestela/assets/img/ratecake.png"
+                          alt="Cake 1"
+                      /></span>
+                    </div>
+                    <p>
+                      Your Rating (Number of Cake Slices):
+                      <span class="rating-value">0</span>/5
+                    </p>
+
+                    <div class="review-section">
+                      <h3>Leave A Review</h3>
+                      <textarea
+                        class="review-text"
+                        rows="4"
+                        placeholder="Describe Your Experience..."
+                      ></textarea>
+                      <button class="submit-review">SUBMIT REVIEW</button>
+                    </div>
+
+                    <div class="review-output">
+                      <h4>SUBMITTED:</h4>
+                      <p class="submitted-rating">
+                        <strong>Rating:</strong> <span>0</span>/5
+                      </p>
+                      <p class="submitted-review">
+                        <strong>Review:</strong>
+                        <span>No Review Submitted Yet</span>
+                      </p>
+                    </div>
+                  </div>
+                  <a
+                    class="btn btn-primary btn-xl text-uppercase"
+                    id="closeModal"
+                    >CLOSE RATING</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CAKE MODAL 7 -->
+    <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal7"
+      tabindex="-1"
+      aria-labelledby="portfolioModal7"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="close-modal" data-bs-dismiss="modal">
+            <img src="assets/img/close-icon.svg" alt="Close modal" />
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <!-- CAKE DETAILS -->
+                  <h2 class="text-uppercase">Rocher Cake</h2>
+                  <!-- SUBTITLE -->
+                  <p class="item-intro text-muted">
+                    Chocolate cake topped with Ferrero Rocher and assorted
+                    chocolate bars.
+                  </p>
+                  <!-- RATING PAGE FOR THE CAKE -->
+                  <div class="rating-container">
+                    <div class="cake-slices">
+                      <span class="slice" data-rating="1"
+                        ><img
+                          src="/cakesbyestela/assets/img/ratecake.png"
+                          alt="Cake 1"
+                      /></span>
+                      <span class="slice" data-rating="2"
+                        ><img
+                          src="/cakesbyestela/assets/img/ratecake.png"
+                          alt="Cake 1"
+                      /></span>
+                      <span class="slice" data-rating="3"
+                        ><img
+                          src="/cakesbyestela/assets/img/ratecake.png"
+                          alt="Cake 1"
+                      /></span>
+                      <span class="slice" data-rating="4"
+                        ><img
+                          src="/cakesbyestela/assets/img/ratecake.png"
+                          alt="Cake 1"
+                      /></span>
+                      <span class="slice" data-rating="5"
+                        ><img
+                          src="/cakesbyestela/assets/img/ratecake.png"
+                          alt="Cake 1"
+                      /></span>
+                    </div>
+                    <p>
+                      Your Rating (Number of Cake Slices):
+                      <span class="rating-value">0</span>/5
+                    </p>
+
+                    <div class="review-section">
+                      <h3>Leave A Review</h3>
+                      <textarea
+                        class="review-text"
+                        rows="4"
+                        placeholder="Describe Your Experience..."
+                      ></textarea>
+                      <button class="submit-review">SUBMIT REVIEW</button>
+                    </div>
+
+                    <div class="review-output">
+                      <h4>SUBMITTED:</h4>
+                      <p class="submitted-rating">
+                        <strong>Rating:</strong> <span>0</span>/5
+                      </p>
+                      <p class="submitted-review">
+                        <strong>Review:</strong>
+                        <span>No Review Submitted Yet</span>
+                      </p>
+                    </div>
+                  </div>
+                  <a
+                    class="btn btn-primary btn-xl text-uppercase"
+                    id="closeModal"
+                    >CLOSE RATING</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CAKE MODAL 8 -->
+    <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal8"
+      tabindex="-1"
+      aria-labelledby="portfolioModal8"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="close-modal" data-bs-dismiss="modal">
+            <img src="assets/img/close-icon.svg" alt="Close modal" />
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <!-- CAKE DETAILS -->
+                  <h2 class="text-uppercase">Brownie Cake</h2>
+                  <!-- SUBTITLE -->
+                  <p class="item-intro text-muted">
+                    Layers of rich brownies drizzled with decadent chocolate for
+                    indulgence.
+                  </p>
+                  <!-- RATING PAGE FOR THE CAKE -->
+                  <div class="rating-container">
+                    <div class="cake-slices">
+                      <span class="slice" data-rating="1"
+                        ><img
+                          src="/cakesbyestela/assets/img/ratecake.png"
+                          alt="Cake 1"
+                      /></span>
+                      <span class="slice" data-rating="2"
+                        ><img
+                          src="/cakesbyestela/assets/img/ratecake.png"
+                          alt="Cake 1"
+                      /></span>
+                      <span class="slice" data-rating="3"
+                        ><img
+                          src="/cakesbyestela/assets/img/ratecake.png"
+                          alt="Cake 1"
+                      /></span>
+                      <span class="slice" data-rating="4"
+                        ><img
+                          src="/cakesbyestela/assets/img/ratecake.png"
+                          alt="Cake 1"
+                      /></span>
+                      <span class="slice" data-rating="5"
+                        ><img
+                          src="/cakesbyestela/assets/img/ratecake.png"
+                          alt="Cake 1"
+                      /></span>
+                    </div>
+                    <p>
+                      Your Rating (Number of Cake Slices):
+                      <span class="rating-value">0</span>/5
+                    </p>
+
+                    <div class="review-section">
+                      <h3>Leave A Review</h3>
+                      <textarea
+                        class="review-text"
+                        rows="4"
+                        placeholder="Describe Your Experience..."
+                      ></textarea>
+                      <button class="submit-review">SUBMIT REVIEW</button>
+                    </div>
+
+                    <div class="review-output">
+                      <h4>SUBMITTED:</h4>
+                      <p class="submitted-rating">
+                        <strong>Rating:</strong> <span>0</span>/5
+                      </p>
+                      <p class="submitted-review">
+                        <strong>Review:</strong>
+                        <span>No Review Submitted Yet</span>
+                      </p>
+                    </div>
+                  </div>
+                  <a
+                    class="btn btn-primary btn-xl text-uppercase"
+                    id="closeModal"
+                    >CLOSE RATING</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CAKE MODAL 9 -->
+    <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal9"
+      tabindex="-1"
+      aria-labelledby="portfolioModal8"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="close-modal" data-bs-dismiss="modal">
+            <img src="assets/img/close-icon.svg" alt="Close modal" />
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <!-- CAKE DETAILS -->
+                  <h2 class="text-uppercase">Macadamia Cake</h2>
+                  <!-- SUBTITLE -->
+                  <p class="item-intro text-muted">
+                    Moist cake topped with roasted macadamias for a nutty
+                    crunch.
+                  </p>
+                  <!-- RATING PAGE FOR THE CAKE -->
+                  <div class="rating-container">
+                    <div class="cake-slices">
+                      <span class="slice" data-rating="1"
+                        ><img
+                          src="/cakesbyestela/assets/img/ratecake.png"
+                          alt="Cake 1"
+                      /></span>
+                      <span class="slice" data-rating="2"
+                        ><img
+                          src="/cakesbyestela/assets/img/ratecake.png"
+                          alt="Cake 1"
+                      /></span>
+                      <span class="slice" data-rating="3"
+                        ><img
+                          src="/cakesbyestela/assets/img/ratecake.png"
+                          alt="Cake 1"
+                      /></span>
+                      <span class="slice" data-rating="4"
+                        ><img
+                          src="/cakesbyestela/assets/img/ratecake.png"
+                          alt="Cake 1"
+                      /></span>
+                      <span class="slice" data-rating="5"
+                        ><img
+                          src="/cakesbyestela/assets/img/ratecake.png"
+                          alt="Cake 1"
+                      /></span>
+                    </div>
+                    <p>
+                      Your Rating (Number of Cake Slices):
+                      <span class="rating-value">0</span>/5
+                    </p>
+
+                    <div class="review-section">
+                      <h3>Leave A Review</h3>
+                      <textarea
+                        class="review-text"
+                        rows="4"
+                        placeholder="Describe Your Experience..."
+                      ></textarea>
+                      <button class="submit-review">SUBMIT REVIEW</button>
+                    </div>
+
+                    <div class="review-output">
+                      <h4>SUBMITTED:</h4>
+                      <p class="submitted-rating">
+                        <strong>Rating:</strong> <span>0</span>/5
+                      </p>
+                      <p class="submitted-review">
+                        <strong>Review:</strong>
+                        <span>No Review Submitted Yet</span>
+                      </p>
+                    </div>
+                  </div>
+                  <a
+                    class="btn btn-primary btn-xl text-uppercase"
+                    id="closeModal"
+                    >CLOSE RATING</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOOTSTRAP JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- CORE JS-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/ratings.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/products.js"></script>
+  </body>
+</html>

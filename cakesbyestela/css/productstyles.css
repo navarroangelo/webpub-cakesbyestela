@@ -1,0 +1,293 @@
+/* PRODUCTS STYLES FOR CAKES BY ESTELA */
+/* PRODUCTS STYLES FOR CAKES BY ESTELA */
+/* PRODUCTS STYLES FOR CAKES BY ESTELA */
+/* PRODUCTS STYLES FOR CAKES BY ESTELA */
+/* PRODUCTS STYLES FOR CAKES BY ESTELA */
+#portfolio {
+  width: 75vw;
+  display: inline-flex;
+}
+
+.btn:not(.btn-dark):not(.btn-social):not([class*="mx-"]) {
+  background-color: #ff8fab;
+  color: white;
+  border-color: #ff8fab;
+}
+
+.btn:not(.btn-dark):not(.btn-social):not([class*="mx-"]):hover {
+  background-color: #e07c98;
+  border-color: whitesmoke;
+}
+
+.btn:not(.btn-dark):not(.btn-social):not([class*="mx-"]):focus {
+  background-color: #e07c98;
+  border-color: whitesmoke;
+}
+
+.quantity-selector {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+h5 {
+  margin-top: 1em;
+  text-align: center;
+}
+
+#quanSelect1,
+#quanSelect2,
+#quanSelect3,
+#quanSelect4,
+#quanSelect5,
+#quanSelect6 {
+  width: 5em;
+}
+
+.product-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.quantity-selector {
+  display: flex;
+  align-items: center;
+}
+
+.quanLabel {
+  margin-right: 10px;
+}
+
+#mainContent {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #f8f9fa;
+}
+
+#portfolio {
+  flex: 0 0 75%;
+  padding: 20px;
+}
+
+.table {
+  flex: 0 0 25%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+#mainTitle {
+  margin-top: 1.5em;
+}
+
+#sortSelect {
+  width: 200px;
+  padding: 5px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#sortSelect:focus {
+  border-color: #ff8fab;
+  box-shadow: 0 0 5px rgba(255, 143, 171, 0.5);
+}
+
+#sortSelect option {
+  padding: 10px;
+}
+
+table#cbeCart {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0;
+  height: fit-content;
+  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+}
+
+table#cbeCart th {
+  background-color: #ff8fab;
+  color: white;
+  padding: 10px;
+  text-align: left;
+  font-size: 16px;
+}
+
+table#cbeCart td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  font-size: 15px;
+}
+
+table#cbeCart tr:hover {
+  background-color: #f1f1f1;
+}
+
+table#cbeCart tbody tr {
+  transition: background-color 0.3s;
+  max-height: fit-content;
+}
+
+table#cbeCart td:first-child {
+  font-weight: bold;
+}
+
+.cart-total {
+  font-weight: bold;
+  color: #28a745;
+}
+
+table#cbeCart {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table#cbeCart th,
+table#cbeCart td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+table#cbeCart tbody tr:last-child td {
+  border-bottom: none;
+}
+
+table#cbeCart tfoot {
+  border-top: 1px solid #ddd;
+}
+
+table#cbeCart tfoot td {
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+tfoot #checkoutBtn {
+  text-align: center;
+}
+
+#checkout {
+  display: block;
+  margin: 0 auto;
+}
+
+.rating-container {
+  margin-top: 3em;
+  display: inline-block;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(204, 0, 0, 0.579);
+  text-align: center;
+  border: 2px solid #ff4398;
+  width: 65%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.cake-slices {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.25em;
+  margin-bottom: -1em;
+  cursor: pointer;
+}
+
+.slice {
+  font-size: 3rem;
+  transition: transform 0.2s, color 0.4s;
+  padding: 0 10px;
+}
+
+.slice:hover,
+.slice.active {
+  transform: scale(1.5);
+}
+
+.slice:hover ~ .slice {
+  transform: scale(1);
+  color: lightgray;
+}
+
+#rating-value {
+  font-weight: bold;
+}
+
+.review-section {
+  margin: 30px 0;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #dcdcdc;
+  resize: none;
+  margin: 1em auto;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #ff8fab;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #e61961;
+}
+
+.review-output {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.review-output h4 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.review-output em {
+  font-style: normal;
+}
+
+.rating-container p {
+  font-size: 1.3rem;
+}
+
+#submit-review {
+  margin-bottom: 2.5em;
+  margin-top: 0.5em;
+}
+
+.submitted-review,
+.submitted-rating {
+  margin-bottom: 0;
+}
+
+.portfolio-modal .modal-content p {
+  margin-bottom: 0;
+}
+
+#closeModal {
+  display: block;
+  margin-top: 4em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 65%;
+}
+
+.portfolio-modal .modal-content {
+  padding-top: 4em;
+  padding-bottom: 2.5em;
+}

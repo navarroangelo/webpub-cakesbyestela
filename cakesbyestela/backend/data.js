@@ -1,0 +1,201 @@
+const products = [
+  {
+    id: 1,
+    name: "Lemon Cake",
+    price: 1499,
+    description: "Zesty lemon flavor with a refreshing citrus twist.",
+  },
+  {
+    id: 2,
+    name: "Mango Praline Cake",
+    price: 1899,
+    description: "A fresh, fruity, and delightful treat for hot summer days.",
+  },
+  {
+    id: 3,
+    name: "Strawberry Shortcake",
+    price: 1599,
+    description:
+      "Fresh strawberries and light whipped cream make this cake an irresistible treat.",
+  },
+  {
+    id: 4,
+    name: "A's Chocolate Cake",
+    price: 1799,
+    description: "Rich chocolate delight that will satisfy your sweet tooth.",
+  },
+  {
+    id: 5,
+    name: "Caramel Cheesecake",
+    price: 1699,
+    description: "Creamy cheesecake with a delightful salted caramel swirl.",
+  },
+  {
+    id: 6,
+    name: "Mango Graham Cake",
+    price: 1699,
+    description:
+      "Tropical mango with a delicious graham crust, perfect for a taste of paradise.",
+  },
+  {
+    id: 7,
+    name: "Rocher Cake",
+    price: 1999,
+    description:
+      "Chocolate cake topped with Ferrero Rocher and assorted chocolate bars.",
+  },
+  {
+    id: 8,
+    name: "Brownie Cake",
+    price: 1799,
+    description:
+      "Layers of rich brownies drizzled with decadent chocolate for indulgence.",
+  },
+  {
+    id: 9,
+    name: "Macadamia Cake",
+    price: 1599,
+    description:
+      "Moist cake topped with roasted macadamias for a nutty crunch.",
+  },
+];
+const customers = [
+  {
+    id: 1,
+    name: "John Doe",
+    email: "john@example.com",
+    phone: "123-456-7890",
+    address: "123 Main St.",
+  },
+  {
+    id: 2,
+    name: "Jane Smith",
+    email: "jane@example.com",
+    phone: "987-654-3210",
+    address: "456 Elm St.",
+  },
+  {
+    id: 3,
+    name: "Kiki Joe",
+    email: "kiki@example.com",
+    phone: "123-456-7890",
+    address: "789 Maple St.",
+  },
+  {
+    id: 4,
+    name: "Alice Johnson",
+    email: "alice@example.com",
+    phone: "555-123-4567",
+    address: "101 Oak St.",
+  },
+  {
+    id: 5,
+    name: "Bob Brown",
+    email: "bob@example.com",
+    phone: "555-987-6543",
+    address: "202 Pine St.",
+  },
+  {
+    id: 6,
+    name: "Charlie Davis",
+    email: "charlie@example.com",
+    phone: "555-654-3210",
+    address: "303 Birch St.",
+  },
+  {
+    id: 7,
+    name: "Diana Evans",
+    email: "diana@example.com",
+    phone: "555-321-0987",
+    address: "404 Cedar St.",
+  },
+  {
+    id: 8,
+    name: "Ethan Foster",
+    email: "ethan@example.com",
+    phone: "555-789-0123",
+    address: "505 Spruce St.",
+  },
+  {
+    id: 9,
+    name: "Fiona Green",
+    email: "fiona@example.com",
+    phone: "555-890-1234",
+    address: "606 Willow St.",
+  },
+];
+const messages = [
+  {
+    id: 1,
+    name: "Alice",
+    email: "alice@example.com",
+    phone: "123-456-7890",
+    message: "Inquiry about Lemon Cake",
+    date: "2023-10-27",
+  },
+  {
+    id: 2,
+    name: "Bob",
+    email: "bob@example.com",
+    phone: "987-654-3210",
+    message: "Order for Mango Praline Cake",
+    date: "2023-10-28",
+  },
+  {
+    id: 3,
+    name: "Charlie",
+    email: "charlie@example.com",
+    phone: "555-123-4567",
+    message: "Requesting custom design for a birthday cake",
+    date: "2023-11-01",
+  },
+  {
+    id: 4,
+    name: "Diana",
+    email: "diana@example.com",
+    phone: "555-987-6543",
+    message: "Feedback on the Strawberry Shortcake - delicious!",
+    date: "2023-11-02",
+  },
+  {
+    id: 5,
+    name: "Eve",
+    email: "eve@example.com",
+    phone: "555-321-0987",
+    message: "Inquiry about seasonal discounts",
+    date: "2023-11-03",
+  },
+  {
+    id: 6,
+    name: "Frank",
+    email: "frank@example.com",
+    phone: "555-654-3210",
+    message: "Order update request for Chocolate Cake",
+    date: "2023-11-04",
+  },
+  {
+    id: 7,
+    name: "Grace",
+    email: "grace@example.com",
+    phone: "555-789-0123",
+    message: "Request for delivery options",
+    date: "2023-11-05",
+  },
+  {
+    id: 8,
+    name: "Hank",
+    email: "hank@example.com",
+    phone: "555-890-1234",
+    message: "Inquiry about the freshness of ingredients used",
+    date: "2023-11-06",
+  },
+  {
+    id: 9,
+    name: "Ivy",
+    email: "ivy@example.com",
+    phone: "555-012-3456",
+    message: "Would like a custom cake for an anniversary",
+    date: "2023-11-07",
+  },
+];
+module.exports = { products, customers, messages };
